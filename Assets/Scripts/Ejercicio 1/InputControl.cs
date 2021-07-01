@@ -15,21 +15,28 @@ public class InputControl : MonoBehaviour
 {
     [SerializeField] private float speed;
     private Rigidbody2D body;
+    private Animator animPlayer;
+    //private bool grounded;
 
-    Animator animPlayer;
+
+
 
     private void Awake() 
     {
         body = GetComponent<Rigidbody2D>();
+        animPlayer = GetComponent<Animator>();
     }
 
-    private void Update() 
+    void Update() 
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
 
-        //Me genera el volteo del personaje
+        /*Este algoritmo lo saque del canal Pandemonium Games, en su video de
+        como hacer un juego 2D para principiantes lo aplique para genera el volteo 
+        del personaje
+        */
         if (horizontalInput > 0.01f)
         {
             transform.localScale = Vector3.one;
@@ -41,8 +48,23 @@ public class InputControl : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            body.velocity = new Vector2 (body.velocity.x, speed);
+            jump();
+            animPlayer.SetBool("Jump", true);
         }
+        else
+        {
+            animPlayer.SetBool("Jump",false);
+        }
+
+        animPlayer.SetBool("Run", horizontalInput != 0);
         
+    }
+
+    private void jump()
+    {
+        body.velocity = new Vector2 (body.velocity.x, speed);
+        
+        //grounded = false;
+
     }
 }
