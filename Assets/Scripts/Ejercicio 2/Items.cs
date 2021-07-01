@@ -12,15 +12,11 @@ Descripcion: Contador de items.
 
 public class Items : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]private float item;
 
-    // Update is called once per frame
-    void Update()
+    public Items (float i)
     {
-        
+        this.item=i;
+
     }
 }

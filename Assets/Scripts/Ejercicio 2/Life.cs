@@ -9,18 +9,13 @@ Nombre y numero de ejercicio: Ejercicio 2, Crearas un sistema de retroalimentaci
 usuario a traves de UI GameObject en Unity para un juego de plataforma
 Descripcion: Contador de vidas.
 */
-
 public class Life : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float health;
 
-    // Update is called once per frame
-    void Update()
+    public Life (float hp)
     {
-        
+        this.health=hp;
+
     }
 }

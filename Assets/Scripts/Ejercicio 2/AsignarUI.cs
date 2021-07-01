@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /*
 Nombre completo: Ceballos Castro Emilio
@@ -12,9 +13,21 @@ Descripcion: Asignar los valores en pantalla.
 
 public class AsignarUI : MonoBehaviour
 {
+    public Text lifeTXT;
+    public Text ItemTXT;
+    public Text ScoreTXT;
+
+    Life lifeData;
+    Items itemData;
+    Score scoreData;
+    
     // Start is called before the first frame update
     void Start()
     {
+        lifeData = GetComponentInParent<Life>();
+        itemData = GetComponentInParent<Items>();
+        scoreData = GetComponentInParent<Score>();
+        StartCoroutine(AsignData(0.1f));
         
     }
 
@@ -22,5 +35,12 @@ public class AsignarUI : MonoBehaviour
     void Update()
     {
         
+    }
+
+    IEnumerator AsignData(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        lifeTXT.text = lifeData.health.ToString();
+
     }
 }
