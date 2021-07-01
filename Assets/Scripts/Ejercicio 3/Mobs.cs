@@ -20,9 +20,26 @@ public class Mobs : MonoBehaviour
         newMob=new Mobs[3];
 
         newMob[0]=new Mobs(1,"Ghost");
-        newMob[1]=new Mobs(1,"Hell Cat");
-        newMob[2]=new Mobs(1,"Skeleton");
+        newMob[1]=new Mobs(2,"Hell Cat");
+        newMob[2]=new Mobs(3,"Skeleton");
         
+    }
+
+    void Start() 
+    {
+        loadData(mobId);
+        
+    }
+    void loadData(int m)
+    {
+        for (int i = 0; i < newMob.Length; i++)
+        {
+            if (newMob[i].mobId==m)
+            {
+                this.summon=newMob[i].summon;
+            }
+        }
+
     }
     
     public Mobs(int m, string s)

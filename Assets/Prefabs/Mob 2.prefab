@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6570467577218004583}
   - component: {fileID: 1522807369125421526}
   - component: {fileID: 5114079830962140660}
+  - component: {fileID: 1034643010}
   m_Layer: 0
   m_Name: Mob 2
   m_TagString: Untagged
@@ -102,3 +103,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1034643010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060352589472685679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6711caa5d9bfb7a4197344312146e9a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mobId: 2
+  summon: 
+  newMob: []
