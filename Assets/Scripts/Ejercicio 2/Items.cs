@@ -12,7 +12,7 @@ Descripcion: Contador de items.
 
 public class Items : MonoBehaviour
 {
-    [SerializeField]private float item;
+    public float item;
 
     public Items (float i)
     {

@@ -12,7 +12,7 @@ Descripcion: Contador de puntos/score.
 
 public class Score : MonoBehaviour
 {
-    [SerializeField]private float points;
+    public float points;
 
     public Score (float p)
     {

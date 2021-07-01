@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 /*
 Nombre completo: Ceballos Castro Emilio
@@ -13,9 +14,10 @@ Descripcion: Asignar los valores en pantalla.
 
 public class AsignarUI : MonoBehaviour
 {
-    public Text lifeTXT;
-    public Text ItemTXT;
-    public Text ScoreTXT;
+    [Header("Basic Intefaces TMPro")]
+    public TMP_Text lifeTXTP;
+    public TMP_Text ItemTXTP;
+    public TMP_Text ScoreTXTP;
 
     Life lifeData;
     Items itemData;
@@ -40,7 +42,20 @@ public class AsignarUI : MonoBehaviour
     IEnumerator AsignData(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        lifeTXT.text = lifeData.health.ToString();
+        if (lifeTXTP != null)
+        {
+            lifeTXTP.text = lifeData.health.ToString();
+        }
+        if (lifeTXTP != null)
+        {
+            ItemTXTP.text = itemData.item.ToString();
+        }
+        if (lifeTXTP != null)
+        {
+            ScoreTXTP.text = scoreData.points.ToString();
+        }
+        
+       
 
     }
 }
