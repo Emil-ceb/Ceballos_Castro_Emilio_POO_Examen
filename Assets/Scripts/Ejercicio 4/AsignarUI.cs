@@ -36,7 +36,18 @@ public class AsignarUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (lifeTXTP != null)
+        {
+            lifeTXTP.text = lifeData.health.ToString();
+        }
+        if (lifeTXTP != null)
+        {
+            ItemTXTP.text = itemData.item.ToString();
+        }
+        if (lifeTXTP != null)
+        {
+            ScoreTXTP.text = scoreData.points.ToString();
+        }
     }
 
     /*

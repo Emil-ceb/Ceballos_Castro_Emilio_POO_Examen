@@ -16,6 +16,11 @@ public class Life : MonoBehaviour
     public Life (float hp)
     {
         this.health=hp;
-
     }
+
+    public void damageP (float daño){
+        health -= daño;
+    }
+
+
 }

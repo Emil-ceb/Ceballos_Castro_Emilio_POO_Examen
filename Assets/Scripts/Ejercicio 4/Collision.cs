@@ -11,15 +11,14 @@ Descripcion: Generara colision y restara vida.
 
 public class Collision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float daño;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void OnCollisionEnter2D(Collision2D other)
+     {
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponent<Life>().damageP(daño);
+            gameObject.SetActive(false);
+        }
     }
 }
