@@ -12,15 +12,22 @@ Descripcion: Almacenamiento de informacion de enemigos.
 
 public class Mobs : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    public int mobId;
+    public string summon;
+    public Mobs [] newMob;
+    
+    void Awake() {
+        newMob=new Mobs[3];
+
+        newMob[0]=new Mobs(1,"Ghost");
+        newMob[1]=new Mobs(1,"Hell Cat");
+        newMob[2]=new Mobs(1,"Skeleton");
         
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public Mobs(int m, string s)
     {
-        
+        this.mobId=m;
+        this.summon=s;
     }
 }
