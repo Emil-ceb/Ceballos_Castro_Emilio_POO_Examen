@@ -18,6 +18,9 @@ public class Collision : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<Life>().damageP(daño);
+            //este linea lo que hace es hacer que el enemigo se
+            //desactive al entrar en contacto con el jugador
+            //sin que se destruya por completo
             gameObject.SetActive(false);
         }
     }
