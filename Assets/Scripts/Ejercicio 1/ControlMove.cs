@@ -11,15 +11,32 @@ Descripcion: Script diseñado para generar el movimiento y asignacion de animaci
 */
 public class ControlMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    Animator playerAnim;
+    InputControl inputCon;
+
+
+
+    void Awake() 
     {
+        playerAnim= GetComponent<Animator>();
+        inputCon = GetComponentInParent<InputControl>();
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void Update() 
     {
+        ControlAnim();
         
     }
+
+    private void ControlAnim()
+    {
+        
+        //bool directionForward = direction.x != 0 ? true:false;
+        
+
+    }
+
+
+
 }

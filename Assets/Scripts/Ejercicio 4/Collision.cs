@@ -5,21 +5,27 @@ using UnityEngine;
 /*
 Nombre completo: Ceballos Castro Emilio
 Asignatura: Programacion Orientada a Objetos
-Nombre y numero de ejercicio: Ejercicio 4, Crea un sistema general de colisiones
-Descripcion: Generara colision y restara vida.
+Nombre y numero de ejercicio: Ejercicio 5, Crea registro de colisiones con ítems
+Descripcion: Creara colision con items y dara un puntaje.
 */
 
 public class Collision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float itemB;
+    public float score; 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void OnCollisionEnter2D(Collision2D other)
+     {
+
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponent<Items>().boxP(itemB);
+            gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponent<Score>().scoreP(score);
+        }
     }
 }
