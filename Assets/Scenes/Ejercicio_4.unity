@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 97045779, guid: aeb65d38ad6bdc846a58c0b9a587a578, type: 3}
+      propertyPath: lifeTXTP
+      value: 
+      objectReference: {fileID: 632848780}
     - target: {fileID: 6735930421483767355, guid: aeb65d38ad6bdc846a58c0b9a587a578, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -178,45 +182,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6735930421483767358, guid: aeb65d38ad6bdc846a58c0b9a587a578, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aeb65d38ad6bdc846a58c0b9a587a578, type: 3}
---- !u!1 &97045770 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6735930421483767358, guid: aeb65d38ad6bdc846a58c0b9a587a578, type: 3}
-  m_PrefabInstance: {fileID: 8105662}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &97045778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97045770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00cba019e76d45848bc119ec63601efe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 5
---- !u!114 &97045779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97045770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5be94f611d928e745b9a6eaeea5c4dab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTXTP: {fileID: 632848780}
-  ItemTXTP: {fileID: 0}
-  ScoreTXTP: {fileID: 0}
 --- !u!1 &188399618
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +655,19 @@ CircleCollider2D:
   m_Offset: {x: -0.103514075, y: -0.712836}
   serializedVersion: 2
   m_Radius: 0.09909308
+--- !u!114 &1107334215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107334207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a180a0e6587ab4c8a37d3d11a68e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "da\xF1o": 1
 --- !u!1001 &1153475089
 PrefabInstance:
   m_ObjectHideFlags: 0

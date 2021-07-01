@@ -15,9 +15,11 @@ GameObject:
   - component: {fileID: 6735930421483767354}
   - component: {fileID: 6735930421483767352}
   - component: {fileID: 6735930421483767351}
+  - component: {fileID: 97045778}
+  - component: {fileID: 97045779}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,3 +180,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &97045778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6735930421483767358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cba019e76d45848bc119ec63601efe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+--- !u!114 &97045779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6735930421483767358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be94f611d928e745b9a6eaeea5c4dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTXTP: {fileID: 0}
+  ItemTXTP: {fileID: 0}
+  ScoreTXTP: {fileID: 0}

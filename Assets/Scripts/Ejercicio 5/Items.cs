@@ -19,4 +19,8 @@ public class Items : MonoBehaviour
         this.item=i;
 
     }
+
+    public void boxP (float itemB){
+        item += itemB;
+    }
 }

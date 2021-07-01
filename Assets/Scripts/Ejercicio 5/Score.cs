@@ -19,4 +19,8 @@ public class Score : MonoBehaviour
         this.points=p;
 
     }
+
+        public void scoreP (float score){
+        points += score;
+    }
 }
