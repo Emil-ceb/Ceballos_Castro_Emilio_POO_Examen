@@ -12,7 +12,7 @@ Descripcion: Creara colision con items y dara un puntaje.
 public class Collision : MonoBehaviour
 {
     public float itemB;
-    public float score;
+    public float score; 
 
     private void OnCollisionEnter2D(Collision2D other)
      {
@@ -22,7 +22,7 @@ public class Collision : MonoBehaviour
             other.gameObject.GetComponent<Items>().boxP(itemB);
             gameObject.SetActive(false);
         }
-        
+
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<Score>().scoreP(score);

@@ -20,7 +20,8 @@ public class Items : MonoBehaviour
 
     }
 
-    public void boxP (float itemB){
+    public void boxP (float itemB)
+    {
         item += itemB;
     }
 }

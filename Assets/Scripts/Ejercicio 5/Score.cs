@@ -20,7 +20,8 @@ public class Score : MonoBehaviour
 
     }
 
-        public void scoreP (float score){
+        public void scoreP (float score)
+        {
         points += score;
     }
 }
