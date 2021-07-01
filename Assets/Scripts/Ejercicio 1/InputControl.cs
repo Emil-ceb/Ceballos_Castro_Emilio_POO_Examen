@@ -35,7 +35,7 @@ public class InputControl : MonoBehaviour
 
         /*Este algoritmo lo saque del canal Pandemonium Games, en su video de
         como hacer un juego 2D para principiantes lo aplique para genera el volteo 
-        del personaje
+        del personaje (https://www.youtube.com/watch?v=Gf8LOFNnils)
         */
         if (horizontalInput > 0.01f)
         {

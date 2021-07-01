@@ -30,6 +30,10 @@ public class Mobs : MonoBehaviour
         loadData(mobId);
         
     }
+    /*
+    En este codigo solo use codigos de otras clases para tomar los datos de
+    cada enemigo y sacarlos en pantalla de acuerdo a su id
+    */
     void loadData(int m)
     {
         for (int i = 0; i < newMob.Length; i++)

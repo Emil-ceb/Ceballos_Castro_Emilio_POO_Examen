@@ -152,7 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9c9459ad138154a86026c2f6355f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mob: {fileID: 3435792528048281439, guid: e33bc36b49501434a8d5c702c885dc3b, type: 3}
+  Mob:
+  - {fileID: 3435792528048281439, guid: e33bc36b49501434a8d5c702c885dc3b, type: 3}
+  - {fileID: 5060352589472685679, guid: c92b98890309a1744866e43d41246ec5, type: 3}
+  - {fileID: 5902694713221271590, guid: be56eeae63c273848abe3996994ce369, type: 3}
   spawnRate: 3
 --- !u!4 &194033793
 Transform:

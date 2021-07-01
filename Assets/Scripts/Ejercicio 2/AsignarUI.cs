@@ -39,6 +39,10 @@ public class AsignarUI : MonoBehaviour
         
     }
 
+    /*
+    Para este solo ocupe referecias de clase y fui modificando para tomar los
+    datos pertinentes de cada codigo
+    */
     IEnumerator AsignData(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
