@@ -11,15 +11,5 @@ Descripcion: Script diseñado para generar el movimiento y asignacion de animaci
 */
 public class ControlMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
